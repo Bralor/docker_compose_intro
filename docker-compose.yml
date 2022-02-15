@@ -1,0 +1,10 @@
+version: "3"
+services:
+  greeter_app:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/hello-app
+    command: python3 hello.py
+
